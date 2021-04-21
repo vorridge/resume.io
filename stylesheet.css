@@ -1,0 +1,512 @@
+html, body{
+	height: 100%;
+	margin: 0 ;
+	 min-height:600px;
+}	
+.profile {
+	position: relative;
+	float: left;
+	background: #353535;
+	width: 30%;
+	height: 790px;
+	box-shadow: 8px 15px #000;
+	z-index: 3;
+	overflow: scroll;
+}
+
+ .nameArea {
+	color: white;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 40px;
+	/*font-family: 'Squada One';*/
+}
+
+/*.miniLogo {
+	position: relative;
+	float: left;
+	-webkit-animation: rotation 2s;
+}*/
+
+.name {
+	 position: relative;
+	 font-size: 3em;
+	 font-family: 'VT323';
+	 text-transform: uppercase;
+	 margin-left: 30px;
+	 margin-top: 55px;
+	 white-space: nowrap;
+
+	 overflow: hidden;
+	 animation:
+        typing 2s steps(30, end);
+}
+
+.cursor {
+	animation: blink 1s infinite step-end;
+}
+
+@keyframes blink {
+  from, to { opacity: 0; }
+  50% {opacity: 1;}
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+/*@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(360deg);
+		}
+}*/
+
+ul {
+	list-style-type: none;
+    padding: 0;
+}
+
+.profileInfo{
+	position: relative;
+	float:left;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 30px;
+}
+
+.profileTitle {
+	text-transform: uppercase;
+	font-family: 'Encode Sans Condensed';
+	color: #FF665C;
+}
+
+.text {
+	color: white;
+	padding: 10px;
+	font-family: 'Varela Round';
+}
+
+.contactTitles {
+	color: white;
+	line-height: 40px;
+	padding-left: 10px;
+	float: left;
+	font-family: 'Encode Sans Condensed';
+}
+
+.contact-Content {
+	float: left;
+    text-align: left;
+    color: #e6e1e1;
+    margin-left: 110px;
+    line-height: 40px;
+}
+
+.contentLink ,a:link {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+a:hover {
+	color: #fa9189;
+	text-decoration: underline;
+}
+
+.bracket:before {
+  content: '[';
+  position: absolute;
+  color: #FF665C;
+  font-size: 150px;
+  padding-right: 10px;
+  left: 5px;
+  display: block;
+}
+
+.bracket:after {
+  content: ']';
+   position: absolute;
+  color: #FF665C;
+  font-size: 150px;
+  margin-top: 0;
+  right: 5px;
+  display: block;
+}
+
+
+
+
+
+.resumeInfo {
+	width: 70%;
+    float: left;
+    position: relative;
+    background: #F6F6F6;
+}
+.experience-section{
+	width: 55%;
+	position: relative;
+	float: left;
+	height: 330px;
+}
+.experienceInfo {
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.company {
+	float: left;
+	color: #FF665C;
+	font-family: 'Encode Sans Condensed';
+	line-height: 100px;
+}
+
+.date {
+	float: right;
+	margin-left: 100px;
+	color: #d4c5c5 ;
+	font-family: 'Encode Sans Condensed';
+	line-height: 100px;
+}
+
+.description1 {
+	position: absolute;
+	padding-top: 95px;
+	font-family: 'Varela Round';
+}
+.description2 {
+	position: absolute;
+	padding-top: 215px;
+	font-family: 'Varela Round';
+}
+.description3 {
+	position: absolute;
+	padding-top: 330px;
+	font-family: 'Varela Round';
+}
+
+.resume-Titles{
+	float: left;
+    position: relative;
+	text-transform: uppercase;
+	color: ##0d0d0d;
+	padding-top: 30px;
+	padding-left: 50px;
+	font-family: 'Encode Sans Condensed';
+}
+
+.skill-section {
+	width: 45%;
+	position: relative;
+	float: right;
+	height: 390px;
+}
+.skillArea{
+	position: absolute;
+	padding-top: 90px;
+	padding-left: 50px;
+
+}
+.skill-percent {
+	position: relative;
+	font-family: 'Encode Sans Condensed';
+	margin-bottom: 13px;
+
+}
+.skill-percent:after{
+	  content:"";
+	  border-radius: 5px;
+      width: 340%;
+      height: 6px;
+      background: grey;
+      display:block;
+      margin-top:4px;
+}
+.progress1 {
+	position: absolute;
+	border-radius: 5px;
+      width: 270%;
+      height: 6px;
+      margin-top:24px;
+      background: #FF665C;
+
+      overflow: hidden;
+      animation: html-skill 3s;
+}
+
+@keyframes html-skill {
+	from{width: 0%;  }
+	to { width: 270%; }
+}
+
+.progress2 {
+	position: absolute;
+	border-radius: 5px;
+      width: 250%;
+      height: 6px;
+      margin-top:24px;
+      background: #FF665C;
+
+      overflow: hidden;
+      animation: css 3s;
+}
+
+@keyframes css {
+	from{width: 0%;  }
+	to { width: 250%; }
+}
+
+.progress3 {
+	position: absolute;
+	border-radius: 5px;
+      width: 100%;
+      height: 6px;
+      margin-top:24px;
+      background: #FF665C;
+
+      overflow: hidden;
+      animation: JS 3s;
+}
+@keyframes JS {
+	from{width: 0%;  }
+	to { width: 100%; }
+}
+
+.progress4 {
+	position: absolute;
+	border-radius: 5px;
+      width: 140%;
+      height: 6px;
+      margin-top:24px;
+      background: #FF665C;
+
+      overflow: hidden;
+      animation: Phython 3s;
+}
+@keyframes Phython {
+	from{width: 0%;  }
+	to { width: 140%; }
+}
+
+.progress5 {
+	position: absolute;
+	border-radius: 5px;
+      width: 185%;
+      height: 6px;
+      margin-top:24px;
+      background: #FF665C;
+
+      overflow: hidden;
+      animation: c-plus 3s;
+}
+@keyframes c-plus {
+	from{width: 0%;  }
+	to { width: 185%; }
+}
+
+.progress6 {
+	position: absolute;
+	border-radius: 5px;
+      width: 170%;
+      height: 6px;
+      margin-top:24px;
+      background: #FF665C;
+
+      overflow: hidden;
+      animation: java 3s;
+}
+@keyframes java {
+	from{width: 0%;  }
+	to { width: 170%; }
+}
+
+
+
+.education-section {
+	width:55%;
+	height:460px;
+	position: relative;
+	float: left;
+}
+
+
+
+.software-skill-section{
+	width:45%;
+	height:360px;
+	position: relative;
+	float: left;
+}
+.wordpress-circle{
+  position: absolute;
+  background-color: #FF665C;
+  /*border: 4px solid #3D3D3D;*/
+  border-radius: 50%;
+  box-shadow: 0 0 2px #888;
+  height: 120px;
+  width: 120px;
+  margin-top: 21px;
+  margin-left: 25px;
+}
+.photoshop-circle{
+  position: absolute;
+  background-color: #FF665C;
+  /*border: 4px solid #3D3D3D;*/
+  border-radius: 50%;
+  box-shadow: 0 0 2px #888;
+  height: 120px;
+  width: 120px;
+  margin-top: 21px;
+  margin-left: 230px;
+}
+.sublime-circle {
+  position: absolute;
+  background-color: #FF665C;
+  /*border: 4px solid #3D3D3D;*/
+  border-radius: 50%;
+  box-shadow: 0 0 2px #888;
+  height: 120px;
+  width: 120px;
+  margin-top: 205px;
+  margin-left: 230px;
+}
+.dreamweaver-circle {
+  position: absolute;
+  background-color: #FF665C;
+  /*border: 4px solid #3D3D3D;*/
+  border-radius: 50%;
+  box-shadow: 0 0 2px #888;
+  height: 120px;
+  width: 120px;
+  margin-top: 205px;
+  margin-left: 25px;
+}
+.word-text {
+	position: absolute;
+	padding-top: 25px;
+	padding-left: 20px;
+	color: white;
+	font-size: 16px;
+	font-family: 'Encode Sans Condensed';
+}
+
+.progress-cirlce1{
+	width:150px;
+    height:400px;
+    border-radius:50%;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-top:1px solid black;
+    border-bottom:1px solid white;
+	/*position: absolute;
+	border-radius: 50%;
+	 height: 140px;
+	 width: 140px;
+	 margin: -4px;
+	 background: transparent;
+	 border: 4px solid red;*/
+}
+
+@media screen and (max-width: 1290px) {
+
+		.profile {
+		position: relative;
+		float: left;
+		background: #353535;
+		width: 100%;
+		height: 670px;
+		z-index: 3;
+	}
+	.name {
+		font-size: 4em;
+		margin-top: 35px;
+	}
+	 .nameArea {
+		color: white;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-bottom: 0;
+		/*font-family: 'Squada One';*/
+	}
+	.profileInfo{
+	position: relative;
+	float:left;
+	padding-top: 0;
+	padding-left: 40px;
+	padding-right: 30px;
+}
+	.resumeInfo {
+		width: 100%;
+	    float: left;
+	    position: relative;
+	    background: #F6F6F6;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+.profile {
+	position: relative;
+	float: left;
+	background: #353535;
+	width: 880px;
+	height: 750px;
+	box-shadow: 8px 15px #000;
+	z-index: 3;
+	overflow: scroll;
+}
+
+.resumeInfo {
+	width: 880px;
+    float: left;
+    position: relative;
+    background: #F6F6F6;
+}
+	.experience-section{
+		width: 880px;
+		position: relative;
+		float: left;
+		height: 350px;
+
+	}
+
+	.education-section {
+		width:880px;
+		height:400px;
+		position: absolute;
+		float: left;
+		margin-top: 750px;
+		background: #F6F6F6;
+	}
+	.skill-section {
+	width: 50%;
+	position: relative;
+	float: left;
+	height: 400px;
+	}
+	.software-skill-section{
+		width:50%;
+		height:400px;
+		position: relative;
+		float: right;
+
+	}
+	
+	.bracket:after {
+	  content: ']';s
+	   position: absolute;
+	  color: #FF665C;
+	  font-size: 150px;
+	  margin-top: 0;
+	  right: 390px;
+	  display: block;
+	}
+}
+
+
+
+
