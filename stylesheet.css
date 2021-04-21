@@ -497,7 +497,7 @@ a:hover {
 	}
 	
 	.bracket:after {
-	  content: ']';s
+	  content: ']';
 	   position: absolute;
 	  color: #FF665C;
 	  font-size: 150px;
@@ -506,6 +506,7 @@ a:hover {
 	  display: block;
 	}
 }
+
 
 
 
